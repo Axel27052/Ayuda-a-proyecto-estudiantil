@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evento Increíble - Página de Aterrizaje</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>¡Evento Increíble!</h1>
+    <h1>Live Today, Love Tomorrow, Unite Forever</h1>
+  </header>
+  <div class="container">
+    <img class="event-image" src="img/Tomorrowland-2022-Donde-es-736x414.jpg" alt="Imagen del Evento">
+    <h2 style="text-align: center;">Únete al evento más emocionante del año</h2>
+    <p style="text-align: justify;">Estás invitado a un evento increíble que te dejará sin aliento. Disfruta de un día lleno de actividades emocionantes, charlas inspiradoras y oportunidades para conocer gente nueva.</p>
+    <p style="text-align: justify;">No te pierdas esta oportunidad única de aprender, conectarte y divertirte. ¡Reserva tu lugar ahora!</p>
+    <a href="#" class="cta-button">¡Reservar ahora!</a>
+  </div>
+
+  <!-- Cuadro Modal -->
+    <!-- Cuadro Modal -->
+<!-- Cuadro Modal -->
+<div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-button" id="close-button">&times;</span>
+      <h3>Información de Reserva</h3>
+      <form id="reservation-form">
+        <!-- Los campos del formulario -->
+        <!-- ... -->
+        <div class="form-group">
+          <label for="name">Nombres:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="tickets">Cantidad:</label>
+          <select id="tickets" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <!-- Agrega más opciones si lo deseas -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="payment">Forma de pago:</label>
+          <select id="payment" required>
+            <option value="Tarjeta de Crédito">Tarjeta de Crédito</option>
+            <option value="PayPal">PayPal</option>
+            <option value="Transferencia Bancaria">Transferencia Bancaria</option>
+            <!-- Agrega más opciones si lo deseas -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="country">País:</label>
+          <select id="country" required>
+            <option value="Bélgica">Bélgica</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <!-- Agrega más opciones si lo deseas -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="event-date">Fecha y Hora:</label>
+          <select id="event-date" required>
+            <!-- Las opciones se generarán automáticamente con JavaScript -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="event-price">Precio:</label>
+          <input type="number" id="event-price" required min="0" readonly>
+        </div>
+        <br>
+        <button type="submit" class="cta1-button">Reservar</button>
+      </form>
+      <div id="ticket-info"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
